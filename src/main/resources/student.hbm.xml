@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="com.zettamine.hibernate.entity.Student"
+		table="student">
+		<id name="studentId" column="stdid">
+			<!-- <generator class="assigned" /> -->
+			<generator class="increment" />
+		</id>
+		<property name="studentName" column="sname"></property>
+		<property name="studentEmail" column="email"></property>
+	</class>
+</hibernate-mapping>
